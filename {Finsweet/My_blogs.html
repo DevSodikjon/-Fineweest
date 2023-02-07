@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="./myBlogsCss/main.css" />
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_items">
+          <div class="header_items_logo">
+            <a href="#"><img src="./img/Logo.png" alt="Logo" /></a>
+          </div>
+
+          <div class="header_items_anchor">
+            <ul>
+              <li>
+                <a href="Home.html">Home</a>
+              </li>
+              <li>
+                <a href="Blogs.html">Blog</a>
+              </li>
+              <li>
+                <a href="Posts.html">Posts</a>
+              </li>
+              <li>
+                <a href="aboutUs.html">About Us</a>
+              </li>
+              <li>
+                <a href="register.html">Register</a>
+              </li>
+            </ul>
+
+            <div class="header_items_anchor_loginTeg">
+              <a href="Login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="blogs">
+        <!-- Modal for Adding -->
+      
+        <div class="modal_hover">
+          <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="experienceLabel">
+                    Experience
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                    <form class="form">
+                  <div class="modal-body">
+              
+                    <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label
+                    ><br /><br />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Name"
+                      placeholder="Name"
+                    />
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="expDesc" class="form-label">Description</label
+                    ><br /><br />
+                    <textarea
+                      type="textarea"
+                      class="form-control"
+                      id="expDesc"
+                      placeholder="Description"
+                    ></textarea>
+                    </div>
+                    
+                <!-- <div class="mb-3">
+                <label for="endDate" class="form-label">Photo</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="photo"
+                  placeholder="Choose file"
+                />
+              </div> -->
+
+              <!-- <div class="mb-3">
+                <label for="expDesc" class="form-label">Catagory</label>
+                <select type="select" class="form-control selectCatagory" id="">
+                <option selected value="Selected">Select Catagory</option>
+                <option value="Businnes">Businnes</option>
+                <option value="Startup">Startup</option>
+                <option value="Economy">Economy</option>
+                <option value="Technology">Technology</option>
+                </select>
+              </div> -->
+
+                  <!-- <div class="mb-3">
+                <label for="expDesc" class="form-label">Tags</label>
+                <select type="select" class="form-control" id="tags">
+                <option selected value="Selected">Select Tags</option>
+                <option value="Businnes">Businnes</option>
+                <option value="Startup">Startup</option>
+                <option value="Economy">Economy</option>
+                <option value="Technology">Technology</option>
+                </select>
+              </div>-->
+                
+                </div>
+                 
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                    id="close"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                    id="save-edit"
+                  >
+                    Add
+                  </button>
+                </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div> 
+    
+
+        <div class="container">
+          <div class="blogs_items">
+            <div class="blogs_items_content">
+              <a href=""><h2 class="title">My Blog</h2></a>
+            </div>
+            <!-- <hr class="blogs_hr" /> -->
+
+            <div class="blogs_items_btns">
+              <button>
+                <a href="#" class="add">Add post</a>
+              </button>
+            </div>
+          </div>
+          <hr class="">
+        </div>
+      </section>
+      <section class="tags">
+        <div class="container">
+          <div class="tags_items">
+            <form class="form_search">
+              <div class="form_search_item">
+                <input type="text" class="search" placeholder="Searching..." />
+                <button type="submit">+</button>
+              </div>
+            </form>
+
+            
+
+            <div class="tags_items_diraction">
+              <div class="tags_items_cardBranchs">
+
+              </div>
+            </div>
+
+            <nav aria-label="Page ">
+              <ul class="pagination">
+                <!-- <li class="page-item"><a class="page-link" href="#"><i class="ri-arrow-left-s-line"></i>Prev</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next<i class="ri-arrow-right-s-line"></i></a></li> -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_items">
+          <div class="footer_items_left">
+            <p class="_p">Finstreet 118 2561 Fintown</p>
+            <p class="_p_">Hello@finsweet.com 020 7993 2905</p>
+          </div>
+
+          <div class="footer_items_right">
+            <ul>
+              <li>
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.4/axios.min.js"
+      integrity="sha512-Th6RhKVKcUO1NdowoioG5HrNgi4JzStsjpwheSR+nWcDIVO4Wv6E6D14o/46EqqDsLSca/rcMD1a3OLyPkexAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./ragister Js/server.js"></script>
+    <script src="./myBlogsJs/myBlogs.js"></script>
+    <script src="./myBlogsJs/modal.js"></script>
+  </body>
+</html>

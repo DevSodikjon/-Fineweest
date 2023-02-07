@@ -1,0 +1,85 @@
+.hero {
+    background-image: url('../img/hero.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    .hero_bg {
+        background: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+
+        .hero_items {
+            .hero_items_content {
+                width: 60%;
+
+                .post {
+                    padding-top: 128px;
+                    margin-bottom: 24px;
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: $text_color_white;
+                }
+
+                h2 {
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 64px;
+                    letter-spacing: -2px;
+                    color: $text_color_white;
+                }
+
+                .data {
+                    margin-top: 24px;
+                    margin-bottom: 16px;
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $text_color_white;
+
+                    span {
+                        color: $yellow;
+                    }
+                }
+
+                .desc {
+                    margin-bottom: 48px;
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $text_color_white;
+                }
+
+                button {
+                    margin-bottom: 192px;
+                    background: $yellow;
+                    border: none ;
+                    color: $nav_color;
+                    a{ 
+                        padding: 16px 48px;
+                        text-decoration: none;
+                        font-family: 'Oxygen', sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                button:hover{
+                    border: none;
+                    @include button_yellow_white;
+
+                    a{
+                        color: #FFD050;
+                    }
+                }
+            }
+        }
+    }
+}
+

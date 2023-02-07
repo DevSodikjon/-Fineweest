@@ -1,0 +1,59 @@
+.header {
+    background-color: $nav_color;
+
+    &_items {
+        padding: 25px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_anchor {
+            display: flex;
+            align-items: center;
+            gap: 52px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                gap: 24px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        display: flex;
+                        align-items: center;
+                        color: $text_color_white;
+                        font-family: 'Inter', sans-serif;
+                    }
+
+                    a:hover{
+                        @include a_hover;
+                    }
+                }
+            }
+
+            &_loginTeg {
+                a {
+                    padding: 16px 48px;
+                    background: $text_color_white;
+                    text-decoration: none;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    color: $text_color;
+                }
+
+                a:hover{
+                    @include button_yellow_hover;
+                }
+            }
+        }
+    }
+}

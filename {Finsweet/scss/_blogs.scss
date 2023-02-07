@@ -1,0 +1,77 @@
+.blogs {
+    background-color: $bg_color;
+
+    &_items {
+        &_title {
+            padding-top: 94px;
+            margin-bottom: 64px;
+
+            h3 {
+                font-family: 'Oxygen', sans-serif;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -2px;
+                color: #000000;
+            }
+        }
+
+        &_cardBranchs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .card {
+                width: 405px;
+
+                &_data {
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+
+                    p {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #4C4C4C;
+                    }
+                }
+
+                &_title {
+                    margin-bottom: 16px;
+
+                    h4 {
+                        font-family: 'Oxygen', sans-serif;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                        color: #232536;
+                    }
+                }
+
+                &_description {
+                    p {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16.5px;
+                        line-height: 28px;
+                        color: #232536;
+                        opacity: 0.7
+                    }
+                }
+            }
+        }
+
+        &_hrLine {
+            margin-top: 66px;
+            hr {
+                opacity: 0.3;
+                border: 1px solid #6D6E76;
+            }
+        }
+    }
+}

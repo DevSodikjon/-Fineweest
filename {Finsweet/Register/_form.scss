@@ -1,0 +1,53 @@
+main {
+    .title {
+        margin-top: 69px;
+
+        h3 {
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            letter-spacing: -2px;
+            color: #232536;
+        }
+    }
+
+    form {
+        width: 769px;
+        margin: 0 auto;
+
+        .form_items {
+            margin-top: 68px;
+
+            .content_input {
+                margin-bottom: 30px;
+
+                input {
+                    width: 100%;
+                    padding: 24px 0px 24px 24px;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 16px 0px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                color: #232536;
+                background: $yellow;
+                text-align: center;
+                border:1px solid white;
+            }
+            
+
+            button:hover{
+                background: white;
+                border: 1px solid $yellow;
+                cursor: pointer;
+                color: $yellow;
+            }
+        }
+    }
+}

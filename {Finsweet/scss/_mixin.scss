@@ -1,0 +1,16 @@
+@mixin a_hover {
+    color: $yellow;
+    cursor: pointer;
+}
+
+@mixin button_yellow_hover {
+    background-color: $yellow;
+    color: white;
+    cursor: pointer;
+}
+
+@mixin button_yellow_white {
+    background-color: $bg_color;
+    color:$yellow;
+    cursor: pointer;
+}

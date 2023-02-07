@@ -1,0 +1,99 @@
+.team {
+    &_items {
+        &_team {
+            margin-top: 122px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_content {
+                width: 519px;
+                h3 {
+                    margin-bottom: 16px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 48px;
+                    letter-spacing: -2px;
+                    color: #232536;
+                }
+
+                .desc {
+                    margin-bottom: 16px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #232536;
+                }
+
+                .desc2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #232536;
+                }
+            }
+
+            &_img{
+                position: relative;
+
+                .shape{
+                    position: absolute;
+                    top: 114px;
+                    left: -61px;
+                }
+            }
+        }
+
+        &_reason {
+            margin-top: 122px;
+            margin-bottom: 90px;
+            display: flex;
+            align-items: center;
+            gap: 64px;
+            &_content {
+                width: 519px;
+                h3 {
+                    margin-bottom: 16px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 48px;
+                    letter-spacing: -2px;
+                    color: #232536;
+                }
+
+                .desc {
+                    margin-bottom: 16px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #232536;
+                }
+
+                .desc2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #232536;
+                }
+            }
+
+            &_img{
+                position: relative;
+
+                .circle{
+                    position: absolute;
+                    top: 443px;
+                    left: 107px;
+                }
+            }
+        }
+
+    }
+}

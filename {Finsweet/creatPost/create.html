@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Posts</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <aside>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item nav-logo">
+            <a class="nav-link" href="dashboard.html"
+              >
+              <i class="uil uil-apple-alt"></i>
+              
+              Logo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="uil uil-home"></i>Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiences.html">
+              <i class="ri-user-star-fill"></i>Experiences</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="ri-quill-pen-line"></i></i>Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="ri-folder-user-line"></i>Portfolios</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="ri-mail-line"></i>Messages</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="aside-bottom">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" id="logOut" href="#">
+              <i class="ri-logout-box-r-line"></i>Log out</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link switch-link" href="#">
+              <i class="ri-moon-fill"></i></i>Dark mode
+              <div class="switch">
+                <input type="checkbox">
+              </div>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div class="d-flex justify-content-between">
+        <h3>My Posts</h3>
+        <button
+          class="btn btn-success"
+          data-bs-toggle="modal"
+          data-bs-target="#experience-modal"
+          id="addBtn"
+        >
+          Add
+        </button>
+      </div>
+      <div id="experiences" class="d-flex gap-4 flex-wrap">
+        <!-- <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/725255/pexels-photo-725255.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> -->
+
+        
+      </div>
+    </main>
+    <header>
+      <button class="hamburger"><i class="uil uil-bars"></i></button>
+      <a class="avatar" href="../Home.html"><i class="bi bi-person"></i></a>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="experience-modal"
+      tabindex="-1"
+      aria-labelledby="experienceLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <form id="experience-form">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="experienceLabel">Experience</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Name"
+                  placeholder="Name"
+                />
+              </div>
+              
+              <div class="mb-3">
+                <label for="expDesc" class="form-label">Description</label>
+                <textarea
+                  type="textarea"
+                  class="form-control"
+                  id="expDesc"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+<!--               
+              <div class="mb-3">
+                <label for="endDate" class="form-label">Photo</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="photo"
+                  placeholder="Choose file"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="expDesc" class="form-label">Catagory</label>
+                <select type="select" class="form-control selectCatagory" id="">
+                <option selected value="Selected">Select Catagory</option>
+                <option value="Businnes">Businnes</option>
+                <option value="Startup">Startup</option>
+                <option value="Economy">Economy</option>
+                <option value="Technology">Technology</option>
+                </select>
+              </div> -->
+              
+              <!-- <div class="mb-3">
+                <label for="expDesc" class="form-label">Tags</label>
+                <select type="select" class="form-control" id="tags">
+                <option selected value="Selected">Select Tags</option>
+                <option value="Businnes">Businnes</option>
+                <option value="Startup">Startup</option>
+                <option value="Economy">Economy</option>
+                <option value="Technology">Technology</option>
+                </select>
+              </div> -->
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                id="save-edit"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.4/axios.min.js"
+      integrity="sha512-Th6RhKVKcUO1NdowoioG5HrNgi4JzStsjpwheSR+nWcDIVO4Wv6E6D14o/46EqqDsLSca/rcMD1a3OLyPkexAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      ></script>
+      <script src="../creatPost/server.js"></script>
+    <script src="createCard.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

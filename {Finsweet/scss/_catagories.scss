@@ -1,0 +1,76 @@
+.catagory {
+    background-color: $bg_color;
+    &_items {
+        padding-top: 69px;
+       padding-bottom: 104.07px;
+        &_title {
+            margin-bottom: 73.8px;
+
+            h3 {
+                font-family: 'Oxygen', sans-serif;
+                text-align: center;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -2px;
+                color: #232536;
+            }
+        }
+
+        &_cardBranch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                .card {
+                    width: 296px;
+                    border: 1px solid #6D6E76;
+                    
+    
+                    .card_items {
+                        padding: 36.39px 0px 0px 44px;
+    
+                        .card_items_img{
+                            width: 50px;
+                            border-radius: 10px;
+                        }
+    
+                        .card_items_title {
+                            margin-bottom: 3.29px;
+    
+                            h4 {
+                                font-family: 'Oxygen', sans-serif;
+                                font-weight: 700;
+                                font-size: 28px;
+                                line-height: 40px;
+                                letter-spacing: -1px;
+                                color: #232536;
+                            }
+                        }
+    
+                        .card_items_desc {
+                            margin-bottom: 26.33px;
+                            p {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #6D6E76;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .card:hover{
+                background-color: $yellow;
+                cursor: pointer;
+                .card_items_img{
+                    background: #FBF6EA;
+                }
+            }
+        }
+    }
+}

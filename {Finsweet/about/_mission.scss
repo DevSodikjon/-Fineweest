@@ -1,0 +1,46 @@
+.mission {
+    &_items {
+        &_missionAndVision {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            background: #F4F0F8;
+            margin-top: 50px;
+
+            &_mission {
+                width: 44%;
+                padding: 83px 0px 109px 87px;
+                .title {
+                    margin-bottom: 24px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: #232536;
+                }
+
+                .name {
+                    margin-bottom: 16px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 40px;
+                    letter-spacing: -1px;
+                    color: #232536;
+                }
+
+                .desc {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #6D6E76;
+                }
+            }
+        }
+    }
+}

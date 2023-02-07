@@ -1,0 +1,133 @@
+.tags {
+  &_items {
+    .form_search {
+      padding: 57px 0px 57px 0px;
+
+      &_item {
+        input {
+          width: 100%;
+          padding: 24px 0px 24px 24px;
+        }
+      }
+    }
+
+    .tags_items_diraction {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 91px;
+
+      .tags_items_cardBranchs {
+        .card {
+          width: 748px;
+          display: flex;
+          gap: 32px;
+          margin-bottom: 32px;
+
+          &_img {
+            img {
+              width: 294px;
+            }
+          }
+
+          &_contents {
+            .card_data {
+              margin-bottom: 16px;
+
+              p {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #592ea9;
+              }
+            }
+
+            .card_title {
+              margin-bottom: 16px;
+
+              h4 {
+                font-family: "Oxygen", sans-serif;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: -2px;
+                color: #232536;
+              }
+            }
+
+            .card_description {
+              p {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #6d6e76;
+              }
+            }
+          }
+        }
+      }
+
+      .directions {
+        width: 250px;
+
+        h5 {
+          font-family: "Oxygen", sans-serif;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -2px;
+          color: #232536;
+        }
+
+        button {
+          margin: 5px;
+          padding: 10px 20px;
+          border: 1px solid grey;
+          border-radius: 25px;
+          font-family: "Oxygen", sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 32px;
+        }
+
+        button:hover {
+          background-color: $yellow;
+          cursor: pointer;
+        }
+      }
+    }
+
+    nav {
+      margin-bottom: 106px;
+      ul {
+        margin: 0 auto;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 12px;
+        li {
+          border: 12px solid $yellow;
+          a {
+            border: 1px solid $yellow;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: $text_color_white;
+            background-color: #592ea9;
+          }
+        }
+      }
+    }
+  }
+}
